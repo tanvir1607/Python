@@ -4,7 +4,6 @@ for i in range(a, b + 1):
     if i % c == 0:
         ans = i
         break
-
 print(ans)
 
 
