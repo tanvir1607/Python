@@ -1,11 +1,35 @@
 txt = input()
 ans = "None"
-letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 
-            "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", 
-            "u", "v", "w", "x", "y", "z"]
 
-for letter in letters:
-    if letter not in txt:
-        ans = letter
+for ch in "abcdefghijklmnopqrstuvwxyz":
+    if ch not in txt:
+        ans = ch
+        break
+print(ans)
+
+
+
+
+
+txt = input()
+ans = "None"
+
+for ch in range(ord("a"), ord("z") + 1):
+    if chr(ch) not in txt:
+        ans = chr(ch)
+        break
+print(ans)
+
+
+
+
+import string
+
+txt = input()
+ans = "None"
+
+for ch in string.ascii_lowercase:
+    if ch not in txt:
+        ans = ch
         break
 print(ans)
